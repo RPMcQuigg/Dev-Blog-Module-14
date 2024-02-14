@@ -1,0 +1,16 @@
+{{!< layout }}
+
+<h1>Welcome to our Tech Blog!</h1>
+
+{{#if posts}}
+  {{#each posts}}
+    <div class="post">
+      <h2>{{title}}</h2>
+      <p>{{content}}</p>
+      <p>Posted by: {{user.username}}</p>
+      <a href="/post/{{id}}">Read more</a>
+    </div>
+  {{/each}}
+{{else}}
+  <p>No posts available</p>
+{{/if}}

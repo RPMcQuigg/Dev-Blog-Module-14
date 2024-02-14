@@ -1,0 +1,79 @@
+/* index.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #ffcccc; /* Light red */
+    padding: 10px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    color: #333;
+}
+
+.navbar {
+    background-color: #00ffff; /* Cyan */
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post h2 {
+    color: #333;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.form input[type="text"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    padding: 10px 20px;
+    background-color: #00ffff; /* Cyan */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}

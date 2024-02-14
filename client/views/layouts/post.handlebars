@@ -1,0 +1,25 @@
+<!-- client/views/post.handlebars -->
+
+{{!< layout }}
+
+<div class="post">
+    <h2>{{post.title}}</h2>
+    <p>{{post.content}}</p>
+    <p>Posted by: {{post.user.username}}</p>
+</div>
+
+<div class="comments">
+    <h3>Comments</h3>
+    {{#if comments}}
+        {{#each comments}}
+            <div class="comment">
+                <p>{{text}}</p>
+                <p>Commented by: {{user.username}}</p>
+            </div>
+        {{/each}}
+    {{else}}
+        <p>No comments yet</p>
+    {{/if}}
+</div>
+
+<!-- Include form for adding a new comment -->
